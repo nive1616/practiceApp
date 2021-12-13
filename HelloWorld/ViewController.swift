@@ -49,9 +49,30 @@ class ViewController: UIViewController {
            view.addSubview(crazy)
        }
 
-    @objc func buttonAction(sender: UIButton!) {
-      print("Button tapped")
-    }
+    @objc fileprivate func ghostButtonTapped() {
+            let alertController = UIAlertController(title: "Im a ghost,boo!", message: "", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            present(alertController,animated: true,completion: nil)
+        }
+        
+        @objc fileprivate func winkButtonTapped() {
+            let alertController = UIAlertController(title: "Wink, wink!", message: "", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            present(alertController,animated: true,completion: nil)
+        }
+        
+        @objc fileprivate func angelButtonTapped() {
+            let alertController = UIAlertController(title: "I'm an angellll", message: "", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            present(alertController,animated: true,completion: nil)
+        }
+        
+        @objc fileprivate func crazyButtonTapped() {
+            let alertController = UIAlertController(title: "Yeah, I'm crazy.", message: "", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil));
+            present(alertController,animated: true,completion: nil)
+            
+        }
 
 }
 
